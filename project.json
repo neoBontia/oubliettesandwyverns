@@ -1,0 +1,306 @@
+{
+    "classes" : [
+        {
+            "name" : "Fighter",
+            "health" : 10,
+            "hit-die" : "1d10",
+            "armor" : 16,
+            "abilities" : [
+                {
+                    "strength" : 2,
+                    "dexterity" : 0,
+                    "constitution" : 1,
+                    "intelligence" : 0,
+                    "wisdom" : 0,
+                    "charisma" : 0
+                }
+            ],
+            "actions" : [
+                    {
+                        "name" : "Attack",
+                        "type" : "physical",
+                        "modifier" : "strength",
+                        "damage" : "2d6",
+                        "range" : "5",
+                        "description" : "You use the weapon of your choice to attack."
+                        },
+                    {
+                        "name": "Dodge",
+                        "type": "defensive",
+                        "modifier": "none",
+                        "damage": "0d0",
+                        "range": "self",
+                        "description": "Anticipate your enemy's attack to give them a disadvantage."
+                    }
+            ],
+            "spellslots" : 0
+        },
+        {
+            "name": "Rogue",
+            "health": 8,
+            "hit-die": "1d8",
+            "armor": 11,
+            "abilities": [
+                {
+                    "strength": 0,
+                    "dexterity": 2,
+                    "constitution": 0,
+                    "intelligence": 0,
+                    "wisdom": 0,
+                    "charisma": 1
+                }
+            ],
+            "actions": [
+                {
+                            "name": "Attack",
+                            "type": "physical",
+                            "modifier": "dexterity",
+                            "damage": "2d6",
+                            "range": "5",
+                            "description": "You use the weapon of your choice to attack."
+                        },
+                        {
+                            "name": "Ranged Attack",
+                            "type": "physical",
+                            "modifier": "dexterity",
+                            "damage": "2d6",
+                            "range": "60",
+                            "description": "You use your ranged weapon to attack your enemies."
+                        },
+                        {
+                            "name": "Dodge",
+                            "type": "defensive",
+                            "modifier": "none",
+                            "damage": "0d0",
+                            "range": "self",
+                            "description": "Anticipate your enemy's attack to give them a disadvantage."
+                        }
+            ],
+            "spellslots": 0
+        },
+        {
+            "name": "Paladin",
+            "health": 12,
+            "hit-die": "1d12",
+            "armor": 18,
+            "abilities": [
+                {
+                    "strength": 1,
+                    "dexterity": 0,
+                    "constitution": 2,
+                    "intelligence": 0,
+                    "wisdom": 0,
+                    "charisma": 0
+                }
+            ],
+            "actions": [
+                
+                        {
+                            "name": "Attack",
+                            "type": "physical",
+                            "modifier": "strength",
+                            "damage": "2d6",
+                            "range": "5",
+                            "description": "You use the weapon of your choice to attack."
+                        }
+                    ,
+                    
+                        {
+                            "name": "Dodge",
+                            "type": "defensive",
+                            "modifier": "none",
+                            "damage": "0d0",
+                            "range": "self",
+                            "description": "Anticipate your enemy's attack to give them a disadvantage."
+                        }
+                    ,
+                        {
+                            "name": "Smite",
+                            "type": "magical",
+                            "modifier": "wisdom",
+                            "damage": "3d6",
+                            "range": "5",
+                            "description": "infuse your weapon with holy energy to attack your enemies."
+                        }
+            ],
+            "spellslots": 2
+        },
+        {
+            "name": "Wizard",
+            "health": 6,
+            "hit-die": "1d6",
+            "armor": 10,
+            "abilities": [
+                {
+                    "strength": 0,
+                    "dexterity": 0,
+                    "constitution": 0,
+                    "intelligence": 2,
+                    "wisdom": 1,
+                    "charisma": 0
+                }
+            ],
+            "actions": [
+                {
+                            "name": "Magic Missile",
+                            "type": "magical",
+                            "modifier": "intelligence",
+                            "damage": "4d4",
+                            "range": "60",
+                            "description": "You conjure missles made up of magic to attack."
+                        }
+                    ,
+                    
+                        {
+                            "name": "Dodge",
+                            "type": "defensive",
+                            "modifier": "none",
+                            "damage": "0d0",
+                            "range": "self",
+                            "description": "Anticipate your enemy's attack to give them a disadvantage."
+                        }
+                    ,
+                    
+                        {
+                            "name": "Scorching Ray",
+                            "type": "magical",
+                            "modifier": "intelligence",
+                            "damage": "3d12",
+                            "range": "60",
+                            "description": "Fire three rays of fire to scorch your enemies."
+                        }
+                    ,
+                    
+                        {
+                            "name": "Shield",
+                            "type": "magical",
+                            "modifier": "none",
+                            "damage": "0d0",
+                            "range": "self",
+                            "description": "Conjure a magical shield to completely block an enemy's attack."
+                        }
+                    ,
+                    
+                        {
+                            "name": "Smack",
+                            "type": "physical",
+                            "modifier": "strength",
+                            "damage": "1d8",
+                            "range": "5",
+                            "description": "Use your weapon to smack your enemies."
+                        }
+                    
+            ],
+            "spellslots": 4
+        },
+        {
+            "name": "Cleric",
+            "health": 8,
+            "hit-die": "1d8",
+            "armor": 14,
+            "abilities": [
+                {
+                    "strength": 0,
+                    "dexterity": 0,
+                    "constitution": 0,
+                    "intelligence": 1,
+                    "wisdom": 2,
+                    "charisma": 0
+                }
+            ],
+            "actions": [
+                
+                        {
+                            "name": "Cure Wounds",
+                            "type": "healing",
+                            "modifier": "wisdom",
+                            "damage": "2d8",
+                            "range": "5",
+                            "description": "You touch a creature to heal them."
+                        }
+                    ,
+                    
+                        {
+                            "name": "Attack",
+                            "type": "physical",
+                            "modifier": "strength",
+                            "damage": "1d10",
+                            "range": "5",
+                            "description": "You use the weapon of your choice to attack."
+                        }
+                    ,
+                    
+                        {
+                            "name": "Dodge",
+                            "type": "defensive",
+                            "modifier": "none",
+                            "damage": "0d0",
+                            "range": "self",
+                            "description": "Anticipate your enemy's attack to give them a disadvantage."
+                        }
+                    ,
+                    
+                        {
+                            "name": "Sacred Flame",
+                            "type": "magical",
+                            "modifier": "wisdom",
+                            "damage": "2d12",
+                            "range": "60",
+                            "description": "Conjure a flame of holy attribute to attack your enemies."
+                        }
+            ],
+            "spellslots": 3
+        },
+        {
+            "name": "Bard",
+            "health": 8,
+            "hit-die": "1d8",
+            "armor": 11,
+            "abilities": [
+                {
+                    "strength": 0,
+                    "dexterity": 1,
+                    "constitution": 0,
+                    "intelligence": 0,
+                    "wisdom": 0,
+                    "charisma": 2
+                }
+            ],
+            "actions": [
+                {
+                            "name": "Vicious Mockery",
+                            "type": "magical",
+                            "modifier": "charisma",
+                            "damage": "2d6",
+                            "range": "60",
+                            "description": "You mock a creature viciously to deal damage."
+                        },
+                   {
+                            "name": "Attack",
+                            "type": "physical",
+                            "modifier": "strength",
+                            "damage": "2d6",
+                            "range": "5",
+                            "description": "You use the weapon of your choice to attack."
+                        },
+                    {
+                            "name": "Dodge",
+                            "type": "defensive",
+                            "modifier": "none",
+                            "damage": "0d0",
+                            "range": "self",
+                            "description": "Anticipate your enemy's attack to give them a disadvantage."
+                        },
+                        {
+                            "name": "Bardic Inspiration",
+                            "type": "support",
+                            "modifier": "charisma",
+                            "damage": "1d6",
+                            "range": "60",
+                            "description": "You inspire an ally to help them."
+                        }
+            ],
+            "spellslots": 3
+        }
+    ]
+}

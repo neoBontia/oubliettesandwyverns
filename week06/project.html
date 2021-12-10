@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oubliettes & Wyverns</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Oubliettes & Wyverns</h1>
+        <h2>A Dungeons & Dragons spin-off</h2>
+    </header>
+
+    <main>
+        <fieldset class="character-sheet">
+            <legend>Character Sheet</legend>
+
+            <div class="name-class-aap">
+                <label class="left">Character Name<input type="text" name="charName"></label>
+                <label class="top">Available Ability Points<span id="aap"></span></label>
+                <label class="left">Class<select id="classes" name="className" onchange="selectClass()">
+                    <option value="">Select class</option>
+                </select></label>
+            </div>
+
+            <div class="abilities-hp-ac">
+                <div class="abilities">
+                    <section class="ability-box">
+                        <label class="left">
+                            <p>Strength</p><div id="str-score"></div><div id="str-mod"></div>    
+                        </label>
+                        <button class="ability-button" onclick="addToStr()">+</button>
+                        <button class="ability-button" onclick="minusToStr()">-</button>
+                    </section>
+
+                    <section class="ability-box">
+                        <label class="left">
+                            <p>Dexterity</p><div id="dex-score"></div>
+                            <div id="dex-mod"></div>        
+                        </label>
+                        <button class="ability-button" onclick="addToDex()">+</button>
+                        <button class="ability-button" onclick="minusToDex()">-</button>
+                    </section>
+
+                    <section class="ability-box">
+                        <label class="left">
+                            <p>Constitution</p><div id="con-score"></div>
+                            <div id="con-mod"></div>        
+                        </label>
+                        <button class="ability-button" onclick="addToCon()">+</button>
+                        <button class="ability-button" onclick="minusToCon()">-</button>
+                    </section>
+
+                    <section class="ability-box">
+                        <label class="left">
+                            <p>Intelligence</p><div id="int-score"></div>
+                            <div id="int-mod"></div>        
+                        </label>
+                        <button class="ability-button" onclick="addToInt()">+</button>
+                        <button class="ability-button" onclick="minusToInt()">-</button>
+                    </section>
+
+                    <section class="ability-box">
+                        <label class="left">
+                            <p>Wisdom</p><div id="wis-score"></div>
+                            <div id="wis-mod"></div>        
+                        </label>
+                        <button class="ability-button" onclick="addToWis()">+</button>
+                        <button class="ability-button" onclick="minusToWis()">-</button>
+                    </section>
+
+                    <section class="ability-box">
+                        <label class="left">
+                            <p>Charisma</p><div id="cha-score"></div>
+                            <div id="cha-mod"></div>        
+                        </label>
+                        <button class="ability-button" onclick="addToCha()">+</button>
+                        <button class="ability-button" onclick="minusToCha()">-</button>
+                    </section>
+                </div>
+
+                <div class="hp-ac">
+                    <label class="top">Health Points<div class="hp-container"><input type="text" name="health" id="health"><span id="hp"></span></div></label>
+                    <label class="top">Armor Class<span id="ac"></span></label>
+                </div>
+
+            </div>
+
+            <div class="rolls">
+                <label class="left">Actions<select id="actions" name="actions">
+                        <option value="">Select an action</option>
+                    </select></label>
+                <button class="rollBtn" onclick="rollAbility()">Roll</button>
+
+                <label class="left">Check<select id="check" name="check">
+                        <option value="">Select which check</option>
+                        <option value="strength">Strength</option>
+                        <option value="dexterity">Dexterity</option>
+                        <option value="constitution">Constitution</option>
+                        <option value="intelligence">Intelligence</option>
+                        <option value="wisdom">Wisdom</option>
+                        <option value="charisma">Charisma</option>
+                    </select></label>
+                <button class="rollBtn" onclick="rollCheck()">Roll</button>
+
+                <label class="left">Save<select id="save" name="save">
+                        <option value="">Select which saving throw</option>
+                        <option value="strength">Strength</option>
+                        <option value="dexterity">Dexterity</option>
+                        <option value="constitution">Constitution</option>
+                        <option value="intelligence">Intelligence</option>
+                        <option value="wisdom">Wisdom</option>
+                        <option value="charisma">Charisma</option>
+                    </select></label>
+                <button class="rollBtn" onclick="rollSave()">Roll</button>
+            </div>
+        </fieldset>
+
+        <fieldset id="history">
+            <legend>History</legend>
+        </fieldset>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="year"></span> | CSE 121B | Neo Adam Bontia
+        </p>
+    </footer>
+    <script src="javascript/script.js"></script>
+</body>
+</html>

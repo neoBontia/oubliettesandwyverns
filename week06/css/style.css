@@ -1,0 +1,199 @@
+body {
+    text-align: center;
+}
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+
+}
+
+header, footer {
+    background-color: red;
+    color: white;
+}
+
+.character-sheet {
+    width: 800px;
+    padding: 20px;
+}
+
+#history {
+    width: 400px;
+    height: 600px;
+    overflow: auto;
+}
+
+.name-class-aap {
+    display: grid;
+    grid-template-columns: 600px 200px;
+}
+
+.left {
+    display: block;
+    padding: 10px 0;
+}
+
+.name-class-aap .left input {
+    padding: .75rem;
+    width: 400px;
+    margin-left: 10px;
+}
+
+.left select {
+    padding: .75rem;
+    width: 429px;
+    margin-left: 79px;
+}
+
+.top {
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+
+.top span{
+    display: block;
+    padding-top: 10px;
+}
+
+
+.abilities-hp-ac {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.abilities {
+    padding: 20px;
+}
+
+.ability-box {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.abilities label {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.abilities p {
+    width: 100px;
+}
+
+.abilities div {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.ability-box button {
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+.hp-ac {
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+}
+
+.hp-ac .top {
+    padding: 50px;
+}
+
+.hp-container {
+    display: flex;
+    align-items: center;
+}
+
+#health {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid black;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+#hp, #ac {
+    font-size: 50px;
+    padding-top: 10px;
+}
+
+.rolls {
+    text-align: center;
+}
+
+.magical {
+    color: blueviolet;
+}
+
+.physical {
+    color: red;
+}
+
+.defensive {
+    color: dimgray;
+}
+
+.healing {
+    color: green;
+}
+
+.support {
+    color: orange;
+}
+
+.rollBtn {
+    padding: 10px 50px;
+}
+
+#history div {
+    border: 1px solid black;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+}
+
+#history .magical {
+    border: 1px solid blueviolet;
+    color: black;
+}
+
+#history .physical {
+    border: 1px solid red;
+    color: black;
+}
+
+#history .defensive {
+    border: 1px solid dimgray;
+    color: black;
+}
+
+#history .healing {
+    border: 1px solid green;
+    color: black;
+}
+
+#history .support {
+    border: 1px solid orange;
+    color: black;
+}
+
+#history h3, #history h4, #history h5, #history p {
+    margin: 5px;
+}
